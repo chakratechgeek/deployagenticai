@@ -205,4 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-.env.example/**
+# dotenv files (ignore real secrets)
+.env
+.env.local
+.env.*.local
+.env.*          # ignore all .env.* ...
+!.env.example   # ...but keep the template tracked
